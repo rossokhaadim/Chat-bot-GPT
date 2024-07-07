@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block title %}GenAI-Bot - Home{% endblock %}
+
+{% block content %}
+<p align="center"><img src="{{ url_for('static', filename='chatbot1.png') }}" alt="Python-BOT" class="image"></p>
+<div class="boxed">
+    <div id="chatbox">
+        {% if messages %}
+            {% for message in messages %}
+                {% if message.role == "user" %}
+                    <p class="userText"><span>{{ message.text }}</span></p>
+                {% elif message.role == "assistant" %}
+                    <p class="botText"><span>{{ message.text }}</span></p>
+                {% endif %}
+            {% endfor %}
+        {% else %}
+            <p class="botText"><span>Hi! What is your question today?</span></p>
+        {% endif %}
+    </div>
+    <div id="userInput">
+        <input id="textInput" type="text" name="msg" placeholder="Message" />
+    </div>
+</div>
+<script>
+    function getBotResponse() {
+        var rawText = $("#textInput").val();
+        var userHtml = '<p class="userText"><span>' + rawText + "</span></p>";
+        $("#textInput").val("");
+        $("#chatbox").append(userHtml);
+        document.getElementById("userInput").scrollIntoView({ block: "start", behavior: "smooth" });
+
+        $.get("/chat-bot/get_ai_response", { msg: rawText }).done(function (data) {
+            var botHtml = '<p class="botText"><span>' + data + "</span></p>";
+            $("#chatbox").append(botHtml);
+            document.getElementById("userInput").scrollIntoView({ block: "start", behavior: "smooth" });
+        });
+    }
+    $("#textInput").keypress(function (e) {
+        if (e.which == 13) {
+            getBotResponse();
+        }
+    });
+</script>
+{% endblock %}
