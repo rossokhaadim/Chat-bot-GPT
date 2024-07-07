@@ -3,8 +3,7 @@
 !PAY ATTENTION THAT DESIGN AND THE WHOLE CODE ARE NOT FINISHED BUT ALL FUNCTIONALITY WORKS!
 
 ## Login page:
-![image](https://github.com/rossokhaadim/Chat-bot-GPT/assets/162993195/c66cdf20-c6d1-4bb0-b546-1220e540b252)
-
+![image](https://github.com/rossokhaadim/Chat-bot-GPT/assets/162993195/8551d243-15b1-4a70-a7b7-831b94b627de)
 
 ## Register page:
 ![image](https://github.com/rossokhaadim/Chat-bot-GPT/assets/162993195/d924368f-395e-45aa-9ca8-e4f09584cbd0)
