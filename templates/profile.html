@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block title %}GenAI-Bot - Profile{% endblock %}
+
+{% block content %}
+<div class="profile-container">
+    <h2>Profile Page</h2>
+    <p>Your account details are below:</p>
+    <table class="profile-table">
+        <tr>
+            <td><strong>Username:</strong></td>
+            <td>{{ account['username'] }}</td>
+        </tr>
+        <tr>
+            <td><strong>Email:</strong></td>
+            <td>{{ account['email'] }}</td>
+        </tr>
+        <tr>
+            <td><strong>Password:</strong></td>
+            <td>******</td>
+        </tr>
+    </table>
+    <button class="toggle-button" onclick="togglePasswordForm()">Change Password</button><br>
+    <div id="changePasswordForm" style="display:none;">
+        <h3>Change Password</h3>
+        <form method="post" action="{{ url_for('change_password') }}">
+            <label class="change_password" for="old_password">Old Password:</label>
+            <input class="change_password" type="password" name="old_password" id="old_password" required><br>
+            <label class="change_password" for="new_password">New Password:</label>
+            <input class="change_password" type="password" name="new_password" id="new_password" required><br>
+            <label class="change_password" for="confirm_password">Confirm New Password:</label>
+            <input class="change_password" type="password" name="confirm_password" id="confirm_password" required><br>
+            <input class="change_password_button" type="submit" value="Change Password">
+        </form>
+    </div>
+    {% if msg %}
+    <p class="message">{{ msg }}</p>
+    {% endif %}
+    <button class="logout-button" onclick="window.location.href='{{ url_for('logout') }}'">Logout</button>
+</div>
+<script>
+    function togglePasswordForm() {
+        var form = document.getElementById('changePasswordForm');
+        if (form.style.display === 'none' || form.style.display === '') {
+            form.style.display = 'block';
+        } else {
+            form.style.display = 'none';
+        }
+    }
+</script>
+{% endblock %}

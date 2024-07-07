@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html class="html_logined">
+<head>
+    <title>{% block title %}GenAI-Bot{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body class="body_logined">
+    <div id="sidebar">
+        <h2>Menu</h2>
+                <hr class="sidebar-divider">
+        <a href="/chat-bot/profile">Account</a>
+        <hr class="sidebar-divider">
+        <a href="/chat-bot/home">New Chat</a>
+        <div id="chatList">
+            {% for chat in chats %}
+                <a href="/chat-bot/chat/{{ chat.chat_id }}">{{ chat.chat_name }}</a>
+            {% endfor %}
+        </div>
+        <hr class="sidebar-divider">
+    </div>
+    <div id="main">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
