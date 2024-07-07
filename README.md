@@ -3,21 +3,22 @@
 !PAY ATTENTION THAT DESIGN AND THE WHOLE CODE ARE NOT FINISHED BUT ALL FUNCTIONALITY WORKS!
 
 ## Login page:
-![image](https://github.com/rossokhaadim/Chat-bot-GPT/assets/162993195/d6a4c7aa-0002-481d-ab90-820883f31ccc)
+![image](https://github.com/rossokhaadim/Chat-bot-GPT/assets/162993195/c66cdf20-c6d1-4bb0-b546-1220e540b252)
+
 
 ## Register page:
-![image](https://github.com/rossokhaadim/Chat-bot-GPT/assets/162993195/5bde327c-46c6-41b9-9c06-3197753cf6d2)
+![image](https://github.com/rossokhaadim/Chat-bot-GPT/assets/162993195/d924368f-395e-45aa-9ca8-e4f09584cbd0)
 
 ## Chat interraction page:
 ### It is possible to start new chat or open already existing
-![image](https://github.com/rossokhaadim/Chat-bot-GPT/assets/162993195/fc32b33d-8563-4c6d-80cd-6ec5c3e344d7)
+![image](https://github.com/rossokhaadim/Chat-bot-GPT/assets/162993195/0650351b-81d7-439d-9c15-3c66fcdead9e)
 
 ### As You can see, after the question is written, the new chat is created and is name is generated automatically:
-![image](https://github.com/rossokhaadim/Chat-bot-GPT/assets/162993195/68c3b191-8827-49f0-b416-14cbb2562067)
+![image](https://github.com/rossokhaadim/Chat-bot-GPT/assets/162993195/476c89d8-64ad-44ff-a2f8-1b2f71538871)
 
-### The AI remebers all chat:
-![image](https://github.com/rossokhaadim/Chat-bot-GPT/assets/162993195/a6da4860-13f4-4658-a971-c38c4480e834)
+### The AI remebers all chat to make a long conversation:
+![image](https://github.com/rossokhaadim/Chat-bot-GPT/assets/162993195/07aaf27c-181c-4444-ab06-590ca342cb84)
 
 
 ## MySQL DataBase Scheme
-![image](https://github.com/rossokhaadim/Chat-bot-GPT/assets/162993195/2c08efbf-8904-4512-9d4f-685dbae9907d)
+![image](https://github.com/rossokhaadim/Chat-bot-GPT/assets/162993195/cc59aafb-9600-4854-8332-c694d0e78504)
