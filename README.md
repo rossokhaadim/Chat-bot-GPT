@@ -13,7 +13,7 @@
 ### It is possible to start new chat or open already existing
 ![image](https://github.com/rossokhaadim/Chat-bot-GPT/assets/162993195/0650351b-81d7-439d-9c15-3c66fcdead9e)
 
-### As You can see, after the question is written, the new chat is created and is name is generated automatically:
+### As You can see, after the question is written, the new chat is created and its name is generated automatically:
 ![image](https://github.com/rossokhaadim/Chat-bot-GPT/assets/162993195/476c89d8-64ad-44ff-a2f8-1b2f71538871)
 
 ### The AI remebers all chat to make a long conversation:
