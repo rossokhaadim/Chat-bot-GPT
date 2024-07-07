@@ -19,6 +19,8 @@
 ### The AI remebers all chat to make a long conversation:
 ![image](https://github.com/rossokhaadim/Chat-bot-GPT/assets/162993195/07aaf27c-181c-4444-ab06-590ca342cb84)
 
+### Profile Page
+![image](https://github.com/rossokhaadim/Chat-bot-GPT/assets/162993195/50b6fbef-66cc-4916-9bfb-ad87bc2738e9)
 
 ## MySQL DataBase Scheme
 ![image](https://github.com/rossokhaadim/Chat-bot-GPT/assets/162993195/cc59aafb-9600-4854-8332-c694d0e78504)
